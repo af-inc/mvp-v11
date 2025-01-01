@@ -81,25 +81,6 @@ const ResetPassword = () => {
         </div>
       </div>
 
-      <div className="relative lg:hidden">
-        <div className="h-16 rounded-b-[30px] bg-gradient-to-r from-purple-600 to-blue-600">
-          <div
-            className="absolute inset-0 flex items-center p-6"
-            style={{
-              backgroundImage: `repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(255,255,255,0.1) 10px,
-                rgba(255,255,255,0.1) 20px
-              )`,
-            }}
-          >
-            <span className="text-white text-xl font-extrabold">aidefunding.</span>
-          </div>
-        </div>
-      </div>
-
       <main className="relative flex min-h-screen w-full flex-col lg:grid lg:grid-cols-2">
         <div className="flex flex-1 flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-white">
           <div className="w-full max-w-sm h-screen">
