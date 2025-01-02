@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { Navigation } from "@/components/custom/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,13 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col p-0`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col w-screen p-0 overflow-x-hidden`}>
         <>
-          <div className="">
-            <Link href="/v1">
-            <Image src="/logo.png" alt="Company Logo" className="p-5" width={200} height={50} />
-            </Link>
-          </div>
+          <Navigation/>
           <Toaster position="top-right" />
           {children}
         </>
